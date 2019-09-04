@@ -1,0 +1,27 @@
+[[drinks]]
+  name = "Paloma"
+  [[drinks.spirits]]
+    name = "Tequila"
+    amount = "2 oz"
+  [[drinks.additions]]
+    name = "Fresh lime juice"
+    amount = "0.5 oz"
+  [[drinks.additions]]
+    name = "Grapefruit juice"
+    amount = "2 oz (1/4 cup)"
+  [[drinks.additions]]
+    name = "Grapefruit soda"
+    amount = "4 oz"
+
+[[drinks]]
+  name = "Gimlet"
+  [[drinks.spirits]]
+    name = "Gin"
+    amount = "2.5 oz"
+
+  [[drinks.additions]]
+    name = "Fresh lime juice"
+    amount = "0.5 oz"
+  [[drinks.additions]]
+    name = "Simple syrup"
+    amount = "0.5 oz"

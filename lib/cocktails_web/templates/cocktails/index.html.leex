@@ -1,0 +1,19 @@
+
+Drink Name: <input type="text" name="query" phx-keyup="search">
+Spirits - Any of: <input type="text" name="spirits" phx-keyup="search-spirits">
+<%= for drink <- @drinks do %>
+  <p>
+    <h1><%= drink["name"] %></h1>
+    <h2>Spirits</h2>
+    <div>
+      <%= for spirit <- drink["spirits"] do %>
+        <%= spirit["name"] %> (<%= spirit["amount"] %>)
+        <br>
+      <%end %>
+      <%= for addition <- drink["additions"] do %>
+        <%= addition["name"] %> (<%= addition["amount"] %>)
+        <br>
+      <%end %>
+  </p>
+<% end %>
+
